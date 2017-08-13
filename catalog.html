@@ -7,11 +7,16 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
+        <div class="sedona-logo">
+          <a href="index.html">
+            <img src="http://placehold.it/240x70" width="240" height="70" alt="Логотип Sedona">
+          </a>
+        </div>
         <ul class="site-navigation">
-          <li><a href="index.html">Информация</a></li>
+          <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+          <li><a>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -52,6 +57,10 @@
               </li>
             </ul>
           </fieldset>
+          <div class="filter-price">
+            <p class="filter-price-title">Стоимость в сутки (Р):</p>
+            <input type="range" min="0" max="3000" step="100">
+          </div>
           <button type="submit" class="filter-button button">Показать</button>
         </form>
       </section>
@@ -64,9 +73,13 @@
             <li><a>По типу</a></li>
             <li><a>По рейтингу</a></li>
           </ul>
+          <div class="sorting-controls">
+            <a class="arrow ascending" href="#"></a>
+            <a class="arrow descending" href="#"></a>
+          </div>
         </div>
       </section>
-      <section class="items">
+      <section class="catalog-content">
         <ul class="catalog-list">
           <li class="catalog-item">
             <h2>

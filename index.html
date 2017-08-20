@@ -98,24 +98,36 @@
           <h2 class="form-title">Поиск гостиницы в седоне</h2>
           <div class="form-content">
             <p>
-              <span class="date-in">Дата заезда:</span>
+              <label for="date-in">Дата заезда:</label>
               <span class="date-form">
-                <input type="date" value="">
+                <input class="date-input" type="text" id="date-in" value="24 апреля 2016">
               </span>
             </p>
             <p>
-              <span class="date-out">Дата выезда:</span>
+              <label for="date-out">Дата выезда:</label>
               <span class="date-form">
-                <input type="date" value="">
+                <input class="date-output" type="text" id="date-out" value="4 июля 2016">
               </span>
             </p>
-            <p>
-              <span class="adults">Взрослые:</span>
+
+            <p class="adults">
+              <label for="adults">Взрослые:</label>
+              <span class="input-wrapper">
+                <button class="search-form-minus" type="button">-</button>
+                <input class="people-number" id="adults" type="text">
+                <button class="search-form-plus" type="button">+</button>
+              </span>
             </p>
-            <p>
-              <span class="children">Дети:</span>
+            <p class="children">
+              <label for="children">Дети:</label>
+              <span class="input-wrapper">
+                <button class="search-form-minus" type="button">-</button>
+                <input class="people-number" id="children" type="text">
+                <button class="search-form-plus" type="button">+</button>
+              </span>
             </p>
-            <input type="submit" value="Найти">
+
+            <input type="submit" value="Найти" disabled>
           </div>
         </form>
 

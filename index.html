@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -23,18 +25,18 @@
     </header>
     <main class="content">
       <div class="title-welcome">
-        <img src="img/background-photo.jpg" width="1200" height="510" alt="фон">
+        <img src="img/sedona-welcome.png" width="458" height="382" alt="Sedona welcome">
       </div>
       <section class="features">
-        <h1 class="promo-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="promo-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
         <p class="promo-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
         <div class="features-list">
           <div class="features-item">
-            <div class="features-reason-item">
+            <div class="features-reason-item blue-bg">
               <h2>Настоящий городок</h2>
               <span class="features-item-number">&ndash; №1 &ndash;</span>
-              <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <p>Седона не аттракцион для туристов,<br> там течет своя жизнь</p>
             </div>
             <p class="features-image">
               <img src="img/sedona-photo1.jpg" width="800" height="256" alt="гостинница">
@@ -44,44 +46,44 @@
             <li class="services-item">
               <img src="img/icon-1.svg" width="100" height="100" alt="жильё">
               <h2>Жильё</h2>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <p>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
             </li>
             <li class="services-item">
               <img src="img/icon-3.svg" width="100" height="100" alt="еда">
               <h2>Еда</h2>
-              <p>Всегда заказывая фирменный бургер, Вы не разочаруетесь!</p>
+              <p>Всегда заказывая фирменный бургер,<br> Вы не разочаруетесь!</p>
             </li>
             <li class="services-item">
               <img src="img/icon-2.svg" width="100" height="100" alt="Сувениры">
               <h2>Сувениры</h2>
-              <p>Не только китайского, но и местного производства!</p>
+              <p>Не только китайского, но и местного<br> производства!</p>
             </li>
           </ul>
           <div class="features-item">
             <p class="features-image">
               <img src="img/sedona-photo2.jpg" width="800" height="256" alt="Мост дьявола">
             </p>
-            <div class="features-reason-item">
+            <div class="features-reason-item blue-bg">
               <h2>Там есть мост дьявола</h2>
               <span class="features-item-number">&ndash; №2 &ndash;</span>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
             </div>
           </div>
           <div class="features-reason">
             <div class="features-reason-item">
               <h2>Небольшая площадь</h2>
               <span class="features-item-number">&ndash; №3 &ndash;</span>
-              <p>Все достопримеча­тельности находятся очень близко</p>
+              <p>Все достопримеча­тельности<br> находятся очень близко</p>
             </div>
             <div class="features-reason-item">
               <h2>Красивая дорога</h2>
               <span class="features-item-number">&ndash; №4 &ndash;</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
             </div>
             <div class="features-reason-item">
               <h2>Мало туристов</h2>
               <span class="features-item-number">&ndash; №5 &ndash;</span>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
+              <p>Большинство едет в Гранд Каньон и<br> толпится там</p>
             </div>
           </div>
         </div>
@@ -91,59 +93,64 @@
         <p class="find-hotel-text">Укажите предполагаемые даты поездки,<br>
            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <div class="find-hotel-map">
-          <img src="img/map.jpg" width="1200" height="510" alt="карта">
         </div>
 
         <form class="find-hotel-form" action="#" method="get">
-          <h2 class="form-title">Поиск гостиницы в седоне</h2>
+          <a class="form-title" href="#">Поиск гостиницы в седоне</a>
           <div class="form-content">
-            <p>
+            <p class="date-form">
               <label for="date-in">Дата заезда:</label>
-              <span class="date-form">
-                <input class="date-input" type="text" id="date-in" value="24 апреля 2016">
-                <button class="calendar-button" type="button"><img src="img/calendar.svg" width="22" height="22" alt="Календарь"></button>
-              </span>
+              <input class="date-input" type="text" id="date-in" value="24 апреля 2016">
+              <div class="calendar-icon icon-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                  <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
+                  <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                </svg>
+              </div>
             </p>
-            <p>
+            <p class="date-form">
               <label for="date-out">Дата выезда:</label>
-              <span class="date-form">
-                <input class="date-output" type="text" id="date-out" value="4 июля 2016">
-                <button class="calendar-button" type="button"><img src="img/calendar.svg" width="22" height="22" alt="Календарь"></button>
-              </span>
+              <input class="date-output" type="text" id="date-out" value="4 июля 2016">
+              <div class="calendar-icon icon-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                  <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/>
+                  <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
+                </svg>
+              </div>
             </p>
 
             <p class="adults">
               <label for="adults">Взрослые:</label>
               <span class="input-wrapper">
-                <button class="search-form-minus" type="button">-</button>
+                <button class="search-buttons minus" type="button">-</button>
                 <input class="people-number" id="adults" type="text">
-                <button class="search-form-plus" type="button">+</button>
+                <button class="search-buttons plus" type="button">+</button>
               </span>
             </p>
             <p class="children">
               <label for="children">Дети:</label>
               <span class="input-wrapper">
-                <button class="search-form-minus" type="button">-</button>
+                <button class="search-buttons minus" type="button">-</button>
                 <input class="people-number" id="children" type="text">
-                <button class="search-form-plus" type="button">+</button>
+                <button class="search-buttons plus" type="button">+</button>
               </span>
             </p>
 
-            <input type="submit" value="Найти" disabled>
+            <button class="button" type="submit">Найти</button>
           </div>
         </form>
-
       </section>
     </main>
     <footer class="main-footer">
       <p class="footer-tag">#Visitsedona</p>
       <ul class="footer-social">
-        <li><a class="social-button" href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
-        <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Facebook"></a></li>
-        <li><a class="social-button" href="#"><img src="img/youtube.svg" alt="YouTube"></a></li>
+        <li><a class="social-button" href="#">Twitter</a></li>
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">YouTube</a></li>
       </ul>
       <div class="footer-copyright">
-        <p>Website by</p> <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="120px" height="45px" alt="HTML Academy"></a>
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru">HTML Academy</a>
       </div>
     </footer>
   </body>

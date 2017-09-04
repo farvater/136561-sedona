@@ -422,7 +422,6 @@ img {
 .find-hotel-button {
   padding: 32px 140px 33px 140px;
   font-weight: bold;
-  text-align: none;
   background-color: #766357;
   color: #ffffff;
   border: none;
@@ -487,11 +486,14 @@ img {
 }
 
 .counter-input {
+  vertical-align: top;
   font-weight: bold;
+  font-family: inherit;
+  line-height: 15px;
   width: 35px;
   margin-left: -4px;
   margin-right: -4px;
-  padding: 9px 0;
+  padding: 9px 0 10px 0;
   border: 2px solid #f2f2f2;
   background: #f2f2f2;
   text-align: center;
@@ -964,10 +966,12 @@ img {
 
 .results-icon .icon-up {
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .results-icon .icon-down {
   margin-top: -1px;
+  cursor: pointer;
 }
 
 .results-icon .icon-up path:hover,
@@ -1187,7 +1191,7 @@ img {
   margin-top: -112px;
   position: relative;
   padding: 36px 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   color: #000000;
 }
 

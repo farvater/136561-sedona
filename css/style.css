@@ -414,6 +414,7 @@ img {
 .find-hotel-form {
   background-color: #ffffff;
   color: #000000;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   font-weight: bold;
   line-height: 26px;
   width: 569px;

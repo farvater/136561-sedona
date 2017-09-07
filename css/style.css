@@ -433,6 +433,10 @@ img {
   overflow: hidden;
 }
 
+.map-bg iframe {
+  border: none;
+}
+
 .find-hotel {
   text-align: center;
 }

@@ -380,10 +380,13 @@ img {
 }
 
 .map-bg {
+  position: relative;
   background-image: url("../img/map.jpg");
   background-position: -40px -154px;
   background-repeat: no-repeat;
   padding-bottom: 190px;
+  height: 395px;
+  overflow: hidden;
 }
 
 .find-hotel {
@@ -420,6 +423,7 @@ img {
 }
 
 .find-hotel-form {
+  position: absolute;
   background-color: #ffffff;
   color: #000000;
   -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -427,6 +431,13 @@ img {
   font-weight: bold;
   line-height: 26px;
   width: 569px;
+  top: 0;
+  right: 316px;
+  animation: show 0.6s;
+}
+
+.find-hotel-show {
+  display: none;
 }
 
 .find-hotel-button {
@@ -1334,4 +1345,23 @@ img {
 .copyright-logo:focus path,
 .copyright-logo:active path {
   fill: #bdbbbc;
+}
+
+/* Анимация формы */
+@keyframes show {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

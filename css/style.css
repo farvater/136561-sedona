@@ -68,7 +68,7 @@ img {
   width: 80px;
 }
 
-.sorting .sorting-list ul {
+.sorting-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,7 +780,7 @@ img {
   margin-left: 61px;
 }
 
-.infrastructure ul li:nth-child(2) {
+.infrastructure .parking {
   margin-bottom: 24px;
 }
 
@@ -800,37 +800,7 @@ img {
   cursor: pointer;
 }
 
-.infrastructure ul li:nth-child(1) .filters-checkbox input + .checkbox-img-on::before {
-  left: -4px;
-  top: -1px;
-}
-
-.infrastructure ul li:nth-child(2) .filters-checkbox input + .checkbox-img-on::before {
-  left: -4px;
-  top: -2px;
-}
-
-.infrastructure ul li:nth-child(3) .filters-checkbox input + .checkbox-img-on::before {
-  left: -4px;
-  top: -3px;
-}
-
-.hotels-type ul li:nth-child(1) .filters-checkbox input + .checkbox-img-on::before {
-  left: -5px;
-  top: -1px;
-}
-
-.hotels-type ul li:nth-child(2) .filters-checkbox input + .checkbox-img-on::before {
-  left: -5px;
-  top: -2px;
-}
-
-.hotels-type ul li:nth-child(3) .filters-checkbox input + .checkbox-img-on::before {
-  left: -5px;
-  top: -4px;
-}
-
-.filters-checkbox input + .checkbox-img-on::before {
+.filter-input-checkbox + .checkbox-img-on::before {
   content: "";
   position: absolute;
 
@@ -844,21 +814,18 @@ img {
   background-repeat: no-repeat;
 }
 
-.filters-checkbox input:checked + .checkbox-img-on::before {
+.filter-input-checkbox:checked + .checkbox-img-on::before {
   content: "";
   position: absolute;
 
   width: 27px;
   height: 23px;
 
-  top: -1px;
-  left: -4px;
-
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
-.filters-checkbox input:disabled + .checkbox-img-on::before {
+.filter-input-checkbox:disabled + .checkbox-img-on::before {
   content: "";
   position: absolute;
 
@@ -872,18 +839,45 @@ img {
   background-repeat: no-repeat;
 }
 
-.filters-checkbox input:checked:disabled + .checkbox-img-on::before {
+.filter-input-checkbox:checked:disabled + .checkbox-img-on::before {
   content: "";
   position: absolute;
 
   width: 27px;
   height: 23px;
 
-  top: -1px;
-  left: -4px;
-
   background-image: url("../img/checkbox-on-disabled.svg");
   background-repeat: no-repeat;
+}
+
+.pool-checkbox + .checkbox-img-on::before {
+  left: -4px;
+  top: -1px;
+}
+
+.parking-checkbox + .checkbox-img-on::before {
+  left: -4px;
+  top: -2px;
+}
+
+.wifi-checkbox + .checkbox-img-on::before {
+  left: -4px;
+  top: -3px;
+}
+
+.hotel-checkbox + .checkbox-img-on::before {
+  left: -5px;
+  top: -1px;
+}
+
+.motel-checkbox + .checkbox-img-on::before {
+  left: -5px;
+  top: -2px;
+}
+
+.apartments-checkbox + .checkbox-img-on::before {
+  left: -5px;
+  top: -4px;
 }
 
 .filter legend {
@@ -1085,23 +1079,23 @@ img {
   cursor: pointer;
 }
 
-.results-icon .icon-up path:hover,
-.results-icon .icon-down path:hover {
+.icon-up path:hover,
+.icon-down path:hover {
   fill: #231f20;
 }
 
-.results-icon .icon-active path,
-.results-icon .icon-active path:hover {
+.icon-active path,
+.icon-active path:hover {
   fill: #81b3d2;
 }
 
-.results-icon .icon-up path:focus,
-.results-icon .icon-down path:focus {
+.icon-up path:focus,
+.icon-down path:focus {
   fill: #81b3d2;
 }
 
-.results-icon .icon-up path:active,
-.results-icon .icon-down path:active {
+.icon-up path:active,
+.icon-down path:active {
   fill: #81b3d2;
 }
 
@@ -1133,22 +1127,22 @@ img {
   border-bottom: none;
 }
 
-.sorting-list li a {
+.sorting-item a {
   color: rgba(0, 0, 0, 0.302);
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-list li a:hover {
+.sorting-item a:hover {
   color: #81b3d2;
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-list li a:focus {
+.sorting-item a:focus {
   color: #81b3d2;
   border-bottom: none;
 }
 
-.sorting-list li a:active {
+.sorting-item a:active {
   color: #000000;
   border-bottom: none;
 }
@@ -1161,16 +1155,16 @@ img {
   list-style: none;
 }
 
-.catalog-content h2 a {
+.catalog-title {
   color: #000000;
 }
 
-.catalog-content h2 a:hover {
+.catalog-title:hover {
   color: #81b3d2;
 }
 
-.catalog-content h2 a:focus,
-.catalog-content h2 a:active {
+.catalog-title:focus,
+.catalog-title:active {
   color: rgba(0, 0, 0, 0.302);
 }
 
@@ -1186,15 +1180,15 @@ img {
   margin-bottom: 18px;
 }
 
-.catalog-item:nth-child(1) .item-text p:nth-child(1) {
+.first-p {
   margin-right: 39px;
 }
 
-.catalog-item:nth-child(2) .item-text p:nth-child(1) {
+.second-p {
   margin-right: 65px;
 }
 
-.catalog-item:nth-child(3) .item-text p:nth-child(1) {
+.third-p {
   margin-right: 22px;
 }
 
@@ -1210,36 +1204,36 @@ img {
   color: #ffffff;
 }
 
-.catalog-content .item-button.details {
+.item-button.details {
   background-color: #81b3d2;
   margin-right: 2px;
   left: 0;
   top: -4px;
 }
 
-.catalog-content .item-button.details:hover {
+.item-button.details:hover {
   background-color: #669ec0;
 }
 
-.catalog-content .item-button.details:focus,
-.catalog-content .item-button.details:active {
+.item-button.details:focus,
+.item-button.details:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.302);
 }
 
-.catalog-content .item-button.book {
+.item-button.book {
   background-color: #766357;
   right: 2px;
   top: -4px;
   padding-left: 16px;
 }
 
-.catalog-content .item-button.book:hover {
+.item-button.book:hover {
   background-color: #604e43;
 }
 
-.catalog-content .item-button.book:focus,
-.catalog-content .item-button.book:active {
+.item-button.book:focus,
+.item-button.book:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.302);
 }
@@ -1251,7 +1245,7 @@ img {
   bottom: 33px;
 }
 
-.catalog-content .item-rating span {
+.item-rating span {
   color: #666666;
   background-color: #f2f2f2;
 
@@ -1389,12 +1383,8 @@ img {
   background-color: #81b3d2;
 }
 
-.footer-social li:nth-child(1) svg {
+.twitter-icon svg {
   margin-left: 2px;
-}
-
-.footer-social li:nth-child(3) {
-
 }
 
 .social-button:hover {
